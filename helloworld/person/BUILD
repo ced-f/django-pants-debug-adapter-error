@@ -4,7 +4,8 @@
 python_sources(
     dependencies=[
         "helloworld/person/migrations",
-    ]
+    ],
+    run_goal_use_sandbox = False
 )
 
 python_tests(
@@ -12,6 +13,7 @@ python_tests(
     dependencies=[
         "helloworld",  # For settings.py.
     ],
+    run_goal_use_sandbox = False
 )
 
 python_test_utils(
